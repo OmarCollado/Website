@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+<title>Savannah's Website</title>
+</head>
+
+<body>
+    <img class="name" src="picture/Herron.PNG"></img>
+    
+<!--Navigation Bar -->  
+<ul>
+  <li class="dropdown">
+    <a href="photography.html" class="dropbtn">Photography <i class="arrow down"></i></a>
+    <div class="dropdown-content drop">
+      <a href="2015.html">2015</a>
+      <a href="2016.html">2016</a>
+      <a href="2017.html">2017</a>
+    </div>
+    <li class="dropdown">
+    <a href="#" class="dropbtn">Photojournalism <i class="arrow down"></i></a>
+    <div class="dropdown-content drop">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  <li><a href="purpose.html">Purpose</a></li>
+  <li><a href="bio.html">Bio</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+    
+<!--Slideshow and Scripts-->  
+<div class="w3-content w3-display-container slideshow">
+
+<div class="w3-display-container mySlides">
+  <img class="slide" src="picture/dog.JPG" style="width:85%">
+  <div class="text">
+    <h2>Indiana</h2>
+    <p class="textp">This is my pet dog indiana who seems super confused in this picture. Here he is asking for belly rubbies and food, but he will get neither no matter what sad look he gives me.</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img class="slide" src="picture/tree.JPG" style="width:85%">
+  <div class="text">
+    <h2>Pearblossoms</h2>
+    <p>This is a purty flower.</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img class="slide" src="picture/flower.JPG" style="width:85%">
+  <div class="text">
+    <h2>Indiana</h2>
+    <p class="textp">This is my pet dog indiana he seems really confused in this picture.</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img class="slide" src="picture/land.JPG" style="width:85%">
+  <div class="text">
+    <h2>Indiana</h2>
+    <p>This is my pet dog indiana he seems really confused in this picture.</p>
+  </div>
+</div>
+<button class="w3-button left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>  
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>   
+    <div class="purpose">
+        <div class="purtext">
+        <p class="header">Hello There!</p>
+            <p>I am a freelance amateur photographer with the determination to become a world renowned photojournalist. I hope you enjoy the pictures viewed here and that it might make you see something as you never have before.</p>
+        </div>
+    </div>
+    <div class="footer">
+    <p class="blank"> .</p>
+    <p class="copyright"> 2017 Savannah Herron. All Rights Reserved.</p>
+    </div>
+    </body>
+</html>
